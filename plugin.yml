@@ -1,0 +1,33 @@
+name: OP_Menu
+author: HonzaSTECH
+description: OP Menu saves you from endless typing commands like /gamemode or /weather. Execute the most common commands quickly and comfortably from user-friendly GUI.
+version: 2.0
+prefix: OP Menu
+main: opMenuCore.Main
+
+commands:
+  getOpMenu:
+    description: Gives you OP Menu item.
+    usage: /getOpMenu
+  openOpMenu:
+    description: Opens OP Menu to the specified player.
+    usage: /openOpMenu <Player>
+permissions:
+  opmenu:
+    description: Allows usage of all features OP Menu provides.
+    default: op
+  opmenu.getitem:
+    description: Allows using /getOpMenu command and getting the menu item.
+    default: op
+  opmenu.use:
+    description: Allows opening the menu with the menu item and choosing options.
+    default: op
+  opmenu.open:
+    description: Allows opening the menu GUI
+    default: op
+  opmenu.choose:
+    description: Allows choosing options in opened menu GUI
+    default: op
+  opmenu.open.others:
+    description: Allows using /openOpMenu command and opening the menu to other players.
+    default: op
